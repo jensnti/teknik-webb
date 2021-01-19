@@ -1,0 +1,139 @@
+:root {
+  --color-dark: 34, 34, 34;
+  --color-light: 240, 240, 240;
+  --color-white: 255, 255, 255;
+  --color-primary: 221, 8, 144;
+  --color-secondary: 75, 0, 130;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgb(var(--color-light));
+  background-color: rgb(var(--color-dark));
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(var(--color-light));
+}
+
+h2 {
+  color: rgba(var(--color-light), 0.8);
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  color: rgba(var(--color-light), 0.8);
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  display: block;
+  margin: 0.5rem 0rem;
+}
+
+.lead {
+  color: rgba(var(--color-light), 0.8);
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(var(--color-light), .8);
+  font-weight: 400;
+}
+  
+a:hover {
+  text-decoration: underline;
+  color: rgb(var(--color-primary));
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 576px) {
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: rgb(var(--color-secondary));
+  padding: 1rem 1rem 1.5rem 1rem;
+  font-size: .8rem;
+}
+
+.cat, .footer-link {
+  color: rgba(var(--color-light), .8);
+  fill: rgba(var(--color-light), .8);
+}
+
+.cat:hover, .footer-link:hover {
+  color: rgb(var(--color-light));
+  fill: rgb(var(--color-light));
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.lista {
+  margin: 1rem 0rem;
+  padding: 0rem 2rem;
+  list-style: disc;
+}
